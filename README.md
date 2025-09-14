@@ -1,73 +1,46 @@
-Potato Disease Classification
-Project Overview
-This project develops a deep learning model to classify potato diseases from images. It utilizes a Convolutional Neural Network (CNN) to distinguish between three categories: healthy potatoes and those affected by Early Blight or Late Blight.
+# Training Notebook
 
-Dataset
-The model was trained and validated on a dataset of 2,152 images. The data was split into training and validation sets with an 80/20 ratio to ensure the model's performance was evaluated on unseen data, validating its generalization capabilities.
+This repository contains a Jupyter notebook used for training machine learning models using TensorFlow and Keras. It demonstrates data preprocessing, model architecture design, training procedures, and visualization techniques with Matplotlib.
 
-Model and Methodology
-The project's core is a CNN built using the TensorFlow and Keras frameworks. The model architecture is designed to efficiently extract and learn features from the images.
+## 📂 Project Structure
 
-Key steps in the methodology include:
+- `training.ipynb`: The main notebook containing all code, data preprocessing steps, model creation, training, and evaluation.
 
-Data Preprocessing: Images were resized and rescaled to a uniform size before being fed into the model.
+## 🛠 Key Features
 
-Data Augmentation: Techniques like random rotations and flips were applied to the training data to increase its diversity and prevent the model from overfitting.
+- Data preprocessing using TensorFlow's image processing layers like `Rescaling`, `Resizing`, `RandomFlip`, `RandomRotation`, and `RandomContrast`.
+- Model building using `Sequential` API from Keras.
+- Visualization of training metrics using Matplotlib.
+- Implementation with TensorFlow's efficient backend for deep learning.
 
-Key Results
-The trained model demonstrated strong performance on the validation set:
+## 📦 Requirements
 
-Accuracy: 96.48%
+The project requires Python 3 and the following libraries:
 
-Getting Started
-To run this project, you will need to have Python installed. The following libraries are required and can be installed via pip:
+- TensorFlow
+- Keras (integrated within TensorFlow)
+- Matplotlib
 
-Bash
+## 🚀 How to Run
 
-pip install tensorflow
-pip install keras
-pip install numpy
-pip install matplotlib
-The model training and evaluation process is documented in the training.ipynb Jupyter notebook.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+2. Install the dependencies:
+ pip install -r requirements.txt
 
+3. Launch Jupyter Notebook:
+4. Open training.ipynb and run the cells to train and visualize the model.
 
+📄 Notes
 
+Ensure you have the proper Python version (Python 3.8 or higher recommended).
 
+GPU acceleration is recommended for faster training, but CPU execution is also supported.
 
+This notebook can be adapted for various datasets and architectures.
 
+📧 Contact
 
-
-give it with header and all
-
-
-Potato Disease Classification
-Project Overview
-This project develops a deep learning model to classify potato diseases from images. It uses a Convolutional Neural Network (CNN) to distinguish between three categories: healthy potatoes and those affected by Early Blight or Late Blight.
-
-Dataset
-The model was trained and validated on a dataset of 2,152 images. The data was split into training and validation sets with an 80/20 ratio to ensure the model's performance was evaluated on unseen data, validating its generalization capabilities.
-
-Model and Methodology
-The project's core is a CNN built using the TensorFlow and Keras frameworks. The model architecture is designed to efficiently extract and learn features from the images.
-
-Key steps in the methodology include:
-
-Data Preprocessing: Images were resized and rescaled to a uniform size before being fed into the model.
-
-Data Augmentation: Techniques like random rotations and flips were applied to the training data to increase its diversity and prevent the model from overfitting.
-
-Key Results
-The trained model demonstrated strong performance on the validation set:
-
-Accuracy: 96.48%
-
-Getting Started
-To run this project, you will need to have Python installed. The following libraries are required and can be installed via pip:
-
-Bash
-
-pip install tensorflow
-pip install keras
-pip install numpy
-pip install matplotlib
-The model training and evaluation process is documented in the training.ipynb Jupyter notebook.
+For any questions or suggestions, feel free to raise an issue or contact the repository owner.
